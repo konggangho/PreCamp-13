@@ -1,0 +1,12 @@
+*{box-sizing: border-box; margin: 0px;}
+
+.cb1{display: flex; flex-direction: row; padding: 10px;}
+.cn{ width: 100px;    }
+.cs{ width: 100px; }
+.cb2{display: flex; flex-direction: row; padding: 10px;}
+.ct{ width: 100px; }
+.cr{ width: 100px; }
+.gb{display: flex; flex-direction: row; padding: 10px;}
+.g1b{padding-left: 100px;}
+.g2b{padding-left: 20px;}
+.dl{height: 10px; width: 100%; border-top: 1px solid gray;}

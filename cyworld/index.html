@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>사이좋은 사람들, 싸이월드</title> 
+    <link href="./styles/index.css" rel="stylesheet">
+    <script>
+        function menuhome(){
+            document.getElementById("contentframe").setAttribute("src","home.html")
+            document.getElementById("menuhome").style="color: black; background-color: white;"
+            document.getElementById("menugame").style= "color: white; background-color: #298eb5 "
+            document.getElementById("menujukebox").style= "color: white; background-color: #298eb5 "
+        }
+        function menugame(){
+            document.getElementById("contentframe").setAttribute("src","game.html")
+            document.getElementById("menugame").style="color: black; background-color: white;"
+            document.getElementById("menuhome").style= "color: white; background-color: #298eb5 "
+            document.getElementById("menujukebox").style= "color: white; background-color: #298eb5 "
+        }
+        function menujukebox(){
+            document.getElementById("contentframe").setAttribute("src","jukebox.html")
+            document.getElementById("menujukebox").style="color: black; background-color: white;"
+            document.getElementById("menuhome").style= "color: white; background-color: #298eb5 "
+            document.getElementById("menugame").style= "color: white; background-color: #298eb5 "
+        }
+    </script>
+</head>
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper"> 
+                <div class="wrapper__left">
+                    <div class="wrapper__left__header"></div>
+                        <div class="today">
+                               TODAY
+                               <span class="zero">0</span>
+                                | TOTAL
+                                <span class="count">12345</span>
+                        </div>
+                    <div class="wrapper__left__body">
+                        <div class="left__body__header">
+                            <div class="left__body__header__gray"></div>
+                            <div class="left__body__header__line"></div>
+                        </div>
+                        <div class="left__body__profile">
+                            <div class="under__profile"></div>
+                        </div>
+                        <div class="left__body__footer"></div>
+                    </div>
+                    <div class="npei"></div>
+                </div>
+                <div class="wrapper__right">
+                    <iframe id="contentframe" src="home.html"></iframe>
+                </div>
+                <div class="navigation">
+                    <div id="menuhome" class="navigation__item" onclick="menuhome()">홈</div>
+                    <div id="menugame" class="navigation__item" onclick="menugame()">게임</div>
+                    <div id="menujukebox" class="navigation__item" onclick="menujukebox()">쥬크박스</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

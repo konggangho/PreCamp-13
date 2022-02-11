@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>game</title>
+    <link rel="stylesheet" href="./game.css">
+    <script>
+        function startword(){
+            const word= document.getElementById("word").innerText;
+            const lastword= word[word.length-1]
+            const myword=document.getElementById("myword").value;
+            const firstword=myword[0]
+            if(lastword===firstword){
+                document.getElementById("result").innerText="정답입니다!"
+                document.getElementById("word").innerText=myword
+                document.getElementById("myword").value=""
+            }
+            else{
+                document.getElementById("result").innerText="땡!"
+                document.getElementById("myword").value=""
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="wrapper__header">
+        <div class="header__title">
+            <div class="title">GAME</div>
+            <div class="subtitle">TODAY CHOICE</div>
+        </div>
+        <div class="divideLine"></div>
+    </div>
+    <div class="game__container">
+        <img src="./images/word.png">
+        <div class="game__title">끝말잇기</div>
+        <div class="game__subtitle">제시어: <span id="word">코드캠프</span></div>
+        <div class="word__text">
+            <input id="myword" class="textbox" type="text" placeholder="단어를 입력하세요">
+            <button class="search" onclick="startword()">입력</button>
+        </div>
+        <div id="result" class="word__result">결과!</div>
+    </div>
+    <div class="game__container">
+        <img src="./images/lotto.png">
+        <div class="game__title">LOTTO</div>
+        <div class="game__subtitle">버튼을 누르세요</div>
+        <div class="game__lotto__number">
+            <span>3</span>
+            <span>5</span>
+            <span>13</span>
+            <span>27</span>
+            <span>34</span>
+            <span>14</span>
+        </div>
+        <button class="wrapper__lotto__btn">Button</button>
+    </div>
+    
+</body>
+</html>
